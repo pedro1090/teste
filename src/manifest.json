@@ -1,6 +1,6 @@
 {
-  "name": "Tatu Blocker",
-  "version": "0.1",
+  "name": "Tatu Blocker_teste",
+  "version": "1.0",
   "description": "Bloqueador de anúncios experimental",
   "permissions": ["webRequest", "webRequestBlocking", "http://*/*", "https://*/*", "tabs", "webNavigation", "notifications"],
   "background": {
