@@ -10,7 +10,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 		var part_check = details.url
 		
 		//checagem e bloqueio, caso esteja nos dominios bloqueados
-		if (blocked_domains.includes(domain)) {
+		if (blocked_cosmetic.includes(domain)) {
 			return {cancel: true}; 
 		} else { 
 			//caso não esteja, é checada se a parte do site está nas partes bloqueadas
