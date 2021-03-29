@@ -1,6 +1,6 @@
 //lista de coisas dentro de scripts que apontam anuncios
 file_in = open("block_araw.txt", "r")
-file_out = open("blocked_domains.js", "w")
+file_out = open("blocked_domains_v2.js", "w")
 
 line = file_in.readline()
 file_out.write("var blocked_domains.js = [\n")
