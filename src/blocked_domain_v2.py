@@ -1,5 +1,5 @@
-file_in = open("dominain_blockaraw.txt", "r")
-file_out = open("block_domains.js", "w")
+file_in = open("domain_blockaraw.txt", "r")
+file_out = open("blocked_domains_v2.js", "w")
 
 line = file_in.readline()
 file_out.write("var blocked_sites_v2 = [\n")
