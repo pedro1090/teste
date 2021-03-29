@@ -6,7 +6,8 @@
   "background": {
     "scripts": [    
       "blocked_domains.js", 
-      "background.js"],
+      "background.js","blocked_parts.js"
+    ],
   
     "content_scripts": [{
       "matches": ["*://*/*"],
