@@ -5,7 +5,7 @@
   "permissions": ["webRequest", "webRequestBlocking", "http://*/*", "https://*/*", "tabs", "webNavigation", "notifications"],
   "background": {
     "scripts": [    
-      "blocked_domains.js ", 
+      "blocked_domains.js", 
       "background.js"],
   
     "content_scripts": [{
