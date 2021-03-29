@@ -13,6 +13,7 @@
       "all_frames": true,
       "js": ["script.js"]
       }],
+  "persistent": true
   }
   "manifest_version": 2
 }
