@@ -2,7 +2,7 @@ file_in = open("domain_blockaraw.txt", "r")
 file_out = open("blocked_domains_v2.js", "w")
 
 line = file_in.readline()
-file_out.write("var blocked_sites_v2 = [\n")
+file_out.write("var blocked_domains_v2 = [\n")
 
 first = True
 while(line):
