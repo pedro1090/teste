@@ -21,7 +21,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 			}
 		}	
 	},
-	{urls: ["<all_urls>"]},
+	{urls: ["blocked_domains.js"]},
 	["blocking"]
 );
 
