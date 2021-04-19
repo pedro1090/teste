@@ -8,8 +8,8 @@
 		"16": "img/icon_16.png",
 		"32": "img/icon_32.png"
 	  },
-	  "default_title": "uBlock Origin",
-	  "default_popup": "popup-fenix.html"
+	  "default_title": "Tatu Blocker",
+	  "default_popup": "popup.html"
 	},
 	"commands": {
 	  "launch-element-zapper": {
@@ -71,7 +71,7 @@
 	"incognito": "split",
 	"manifest_version": 2,
 	"minimum_chrome_version": "55.0",
-	"name": "uBlock Origin",
+	"name": "Tatu Blocker",
 	"options_ui": {
 	  "page": "dashboard.html",
 	  "open_in_tab": true
@@ -89,7 +89,7 @@
 	],
 	"short_name": "uBlock₀",
 	"storage": {
-	  "managed_schema": "managed_storage.json"
+	  "managed_schema": "Storege_managed.json"
 	},
 	"version": "1.15.11.0",
 	"web_accessible_resources": [
