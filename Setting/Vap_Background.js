@@ -212,8 +212,6 @@ const toTabId = function(tabId) {
         : 0;
 };
 
-// https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation
-// https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs
 
 vAPI.Tabs = class {
     constructor() {
@@ -428,7 +426,7 @@ vAPI.Tabs = class {
             return null;
         }
 
-        // extension pages
+        // Paginas de extensão
         if ( /^[\w-]{2,}:/.test(targetURL) !== true ) {
             targetURL = vAPI.getURL(targetURL);
         }
@@ -534,16 +532,16 @@ vAPI.Tabs = class {
         return s.replace(/\s+/, '') + url.slice(pos);
     }
 
-    onActivated(/* details */) {
+    onActivated(/* Detalhes */) {
     }
 
-    onClosed(/* tabId, details */) {
+    onClosed(/* tabId, Detalhes */) {
     }
 
-    onCreated(/* details */) {
+    onCreated(/* Detalhes */) {
     }
 
-    onNavigation(/* details */) {
+    onNavigation(/* Detalhes */) {
     }
 
     onUpdated(/* tabId, changeInfo, tab */) {
@@ -644,7 +642,7 @@ vAPI.setIcon = (( ) => {
     (( ) => {
         if ( browserAction.setIcon === undefined ) { return; }
 
-        // The global badge text and background color.
+        // O texto do emblema global e cor de fundo
         if ( browserAction.setBadgeBackgroundColor !== undefined ) {
             browserAction.setBadgeBackgroundColor({ color: '#666666' });
         }
@@ -811,7 +809,6 @@ vAPI.messaging = {
             portDetails.tabURL = tab.url;
         }
         this.ports.set(port.name, portDetails);
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=1652925#c24
         port.sender = undefined;
     },
 
