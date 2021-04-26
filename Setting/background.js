@@ -33,6 +33,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 	["blocking"]
 );
 
+
 /* caso o html esteja pronto pra rodar, é colocado um listener para rodar um script
 de conteúdo para checar o html*/
 
@@ -62,3 +63,26 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 	}
 });
 */
+//Parte reesncrita ************************************************************************************
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tatu Block</title>
+</head>
+<body>
+
+
+
+<script src="js/WebExt.js"></script>
+<script src="js/vapi.js"></script>
+<script src="js/vapi-common.js"></script>
+<script src="js/Vap_Background.js"></script>
+<script src="js/vapi-webrequest.js"></script><
+<script src="js/background.js"></script>
+
+
+
+</body>
+</html>
