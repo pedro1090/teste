@@ -106,14 +106,3 @@ function scanTabs(tab) {
 
 chrome.tabs.onUpdated.addListener(scanTabs);
 
-<script src="js/WebExt.js"></script>
-<script src="js/vapi.js"></script>
-<script src="js/vapi-common.js"></script>
-<script src="js/Vap_Background.js"></script>
-<script src="js/vapi-webrequest.js"></script><
-<script src="js/background.js"></script>
-
-
-
-</body>
-</html>
