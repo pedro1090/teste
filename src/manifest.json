@@ -1,0 +1,43 @@
+{
+  "name": "Tatu Blocker",
+  "version": "0.1",
+  "description": "Bloqueador de anúncios experimental",
+  "permissions": [
+      "cookies",
+      "webRequest", 
+      "webRequestBlocking", 
+      "<all_urls>",
+      "privacy",
+      "bookmarks",
+      "storage",
+      "tabs", 
+      "webNavigation"
+    ],
+  "background": {
+    "scripts": [
+      "blocked_domains.js",
+      "blocked_parts.js",
+      "blocked_cosmetic.js",
+      "blockedjs.js",
+      "background.js", 
+      "script.js",
+      "Vap_Background.js",
+      "Vapi-common.js",
+      "WebExt.js",
+      "vapi-client-extra.js",
+      "vapi-client.js",
+      "vapi-webrequest.js",
+      "vapi.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+        "19": "tatuBlocker.png",
+        "38": "tatuBlocker.png"
+    },
+    "default_title": "Tatu Blocker",
+    "default_popup": "popup.html",
+    "default_script": "popup.js"
+},
+  "manifest_version": 2
+}
