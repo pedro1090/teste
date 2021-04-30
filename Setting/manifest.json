@@ -3,79 +3,31 @@
   "version": "0.1",
   "description": "Bloqueador de anúncios experimental",
   "permissions": [
-      "contentSettings",
       "cookies",
       "webRequest", 
       "webRequestBlocking", 
       "<all_urls>",
       "privacy",
-      "tabs", 
-      "webNavigation", 
-      "notifications",
-      "contextMenus",
-      "privacy",
+      "bookmarks",
       "storage",
-      "tabs",
-      "unlimitedStorage",
+      "tabs", 
       "webNavigation"
-    
-     
     ],
   "background": {
-    "page": "background.html"
-	},
-	"browser_action": {
-	  "default_icon": {
-		"16": "img/icon_16.png",
-		"32": "img/icon_32.png"
-	  },
-	  "default_title": "Tatu Blocker",
-	  "default_popup": "popup.html"
-	},
-	"commands": {
-	  "launch-element-zapper": {
-		"description": "__MSG_popupTipZapper__"
-	  },
-	  "launch-element-picker": {
-		"description": "__MSG_popupTipPicker__"
-	  },
-	  "launch-logger": {
-		"description": "__MSG_popupTipLog__"
-	  },
-	  "open-dashboard": {
-		"description": "__MSG_popupTipDashboard__"
-	  },
-	  "relax-blocking-mode": {
-		"description": "__MSG_relaxBlockingMode__"
-	  }
-	},
-	"content_scripts": [
-	  {
-	"matches": [
-		  "http://*/*",
-		  "https://*/*",
-		  "https://easylist.to/*",
-		  "https://*.fanboy.co.nz/*",
-		  "https://filterlists.com/*",
-		  "https://forums.lanik.us/*",
-		  "https://github.com/*",
-		  "https://*.github.io/*"	
-	],
-	js": [
-	    "/js/scriptlets/subscriber.js"
-		  ],
-	"run_at": "document_idle",
-      	"all_frames": false
-	  }
-	],
-	  
-   "scripts": [
+    "scripts": [
       "blocked_domains.js",
-      "blocked_parts.js", 
-      "background.js", 
+      "blocked_parts.js",
       "blocked_cosmetic.js",
-      "blocked_js.js",
-      "script.js"
+      "blockedjs.js",
+      "background.js", 
+      "script.js",
+      "Vap_Background.js",
+      "Vapi-common.js",
+      "WebExt.js",
+      "vapi-client-extra.js",
+      "vapi-client.js",
+      "vapi-webrequest.js",
+      "vapi.js"
     ]
   },
   "browser_action": {
@@ -84,7 +36,8 @@
         "38": "tatuBlocker.png"
     },
     "default_title": "Tatu Blocker",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_script": "popup.js"
 },
   "manifest_version": 2
-
+}
